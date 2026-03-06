@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using blogSite.Models;
+using BlogSite.Models;
 
-namespace blogSite.Data;
+namespace BlogSite.Data;
 
 public class BlogContext : DbContext
 {
-    public BlogContext(DbContextOptions<BlogContext> options) : base(options) { }
+    public BlogContext(DbContextOptions<BlogContext> options)
+        : base(options) { }
 
     public DbSet<Post> Post { get; set; } = default!; // database table
 

@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using blogSite.Data;
-using blogSite.Models;
+using BlogSite.Data;
+using BlogSite.Models;
 
-namespace blogSite.Pages_Posts
+namespace BlogSite.Pages_Posts
 {
     public class EditModel : PageModel
     {
-        private readonly blogSite.Data.BlogContext _context;
+        private readonly BlogSite.Data.BlogContext _context;
 
-        public EditModel(blogSite.Data.BlogContext context)
+        public EditModel(BlogSite.Data.BlogContext context)
         {
             _context = context;
         }

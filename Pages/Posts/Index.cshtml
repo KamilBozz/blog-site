@@ -1,5 +1,5 @@
 @page
-@model blogSite.Pages_Posts.IndexModel
+@model BlogSite.Pages_Posts.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -11,9 +11,10 @@
     <a asp-page="Create">Create New</a>
 </p>
 
-@foreach(var post in Model.Post) {
+@foreach(var post in Model.Post){
     <p>@post.Title</p>
 }
+
 <table class="table">
     <thead>
         <tr>

@@ -10,7 +10,7 @@
 
 <form method="post">
     <label asp-for="Name">Enter your name:</label>
-    <input type="text" asp-for="Name"/>
+    <input type="text" asp-for="Name" />
     <input type="submit" value="Save" />
 </form>
 
@@ -18,9 +18,9 @@
 
 @{
     List<string> words = [
-        "The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"];
+                "The", "quick", "brow", "fox", "jumps", "over", "the", "lazy", "dog"];
 }
 
-@foreach(var word in words) {
+@foreach(var word in words){
     <span>@word</span>
 }

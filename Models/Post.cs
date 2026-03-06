@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace blogSite.Models;
+namespace BlogSite.Models;
 
 public class Post
 {
